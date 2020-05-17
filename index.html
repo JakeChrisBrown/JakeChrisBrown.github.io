@@ -1,0 +1,90 @@
+<!--
+Here is a template for the site if you want to try and write the page yourself. I have tried to add in comments to help you fill in the details. Message me on twitter or email if you have any questions.
+
+The content of the webpape is controlled by the index.html file. The changes you make to this will change the writing you see on the page.
+
+All the design of the page (font, colours etc.) is controlled by the main.css file. You are welcome to customise this anyway you like.
+
+You can open this html file using your browser. If you make a change to this or the main.css and save it, you can then see the change by refreshing your browser.
+ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="colour.css" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+<!--
+Enter your name here, this is what appears in the tab label on a browser.
+ -->
+<title>Jake Christian Brown</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+</head>
+
+<body class="pageOutline">
+
+<!--
+This is your name that appears at the top of the webpage
+ -->
+<h1 class="name">Jake Christian Brown</h1>
+
+<div class="list">
+	<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="paintme.html">Paint Me</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+
+<div class="content">
+ <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: 480,
+        channel: "asmrsehole",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+</div>
+
+<!--
+This is the section with the contact and the social buttons. Edit it however you want.
+ -->
+<div class="contact">
+<h3>contact</h3>
+
+<!--
+To link to a direct email then include "mailto:youremail@example.com"
+
+To link to a site add the URL in between the "" for the 'href=""'
+ -->
+<a href="mailto:jakechrisbrown@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="https://twitter.com/asmrsehole" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/_asmrsehole" target="_blank"><i class="fab fa-instagram"></i></a>
+
+<!--
+If you have more social media or contact links you can keep adding them.
+The icons I'm using are the fontawesome ones.
+You can find all the icons avaliable by going to fontawesome.com
+
+
+-->
+</div>
+
+
+</body>
+</html>
