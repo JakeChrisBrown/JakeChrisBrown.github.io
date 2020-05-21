@@ -205,4 +205,7 @@ a > .fab, a > .fas{
 		width:100%;
 		padding: 0px;
 	}
+	.list{
+		padding: 0px;
+	}
     }
