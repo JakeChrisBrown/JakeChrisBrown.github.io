@@ -201,4 +201,8 @@ a > .fab, a > .fas{
 		.imageMedium{
 			width:100%;
 		}
+	.content{
+		width:100%;
+		padding: 0px;
+	}
     }
